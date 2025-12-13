@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance Marketing That Delivers Results</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary:#4361ee;
+      --secondary:#3a0ca3;
+      --accent:#f72585;
+      --dark:#0f172a;
+    }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.7;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(15,23,42,.95);
+      padding: 16px 0;
+    }
+    .navbar-brand {
+      font-weight: 800;
+      font-size: 1.7rem;
+      color: #fff !important;
+    }
+    .navbar-brand span { color: var(--accent); }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--dark), var(--secondary));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+    }
+    .hero p {
+      max-width: 620px;
+      opacity: .95;
+    }
+    .hero .rocket {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      font-size: 14rem;
+      color: rgba(255,255,255,.08);
+      transform: translateY(-50%);
+    }
+
+    /* Buttons */
+    .btn-main {
+      background: var(--accent);
+      border: none;
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+    .btn-main:hover {
+      background: #d61b6e;
+      transform: translateY(-3px);
+    }
+
+    /* Sections */
+    section { padding: 100px 0; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-title h2 {
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    /* Cards */
+    .card-box {
+      background: #fff;
+      padding: 35px;
+      border-radius: 18px;
+      height: 100%;
+      transition: .35s;
+      box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    }
+    .card-box:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 25px 60px rgba(0,0,0,.15);
+    }
+    .card-box i {
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    /* Services */
+    .service {
+      text-align: center;
+      padding: 45px 30px;
+      border-radius: 20px;
+      background: #fff;
+      transition: .4s;
+      height: 100%;
+    }
+    .service:hover {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      transform: translateY(-14px);
+    }
+    .service i {
+      font-size: 2.6rem;
+      margin-bottom: 20px;
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, var(--dark), var(--secondary));
+      color: #fff;
+      border-radius: 30px;
+      padding: 90px 40px;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,.8);
+      padding: 80px 0 30px;
+    }
+    footer a {
+      color: rgba(255,255,255,.7);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+    footer a:hover { color: var(--accent); }
+
+    @media(max-width:768px){
+      .hero h1 { font-size: 2.4rem; }
+      .rocket { display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Perf<span>Market</span></a>
+    <div class="ms-auto">
+      <a href="#contact" class="btn btn-main">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1>🚀 Scale Your Business With <span style="color:var(--accent)">Performance Marketing</span> That Delivers Results</h1>
+        <p class="mt-4">
+          Stop burning money on guesswork. Invest only in measurable outcomes.
+          We empower growth-hungry businesses with performance-driven marketing strategies
+          that convert clicks into revenue and campaigns into predictable growth.
+        </p>
+        <div class="mt-4">
+          <a href="#services" class="btn btn-main me-3">Our Services</a>
+          <a href="#contact" class="btn btn-outline-light rounded-pill px-4">Get Started Today</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rocket"><i class="fas fa-rocket"></i></div>
+</section>
+
+<!-- WHAT WE DO -->
+<section style="background:#f8f9ff" id="what-we-do">
+  <div class="container">
+    <div class="section-title">
+      <h2>📈 What We Do</h2>
+      <p>
+        At our core, we are Performance Marketeers. Every strategy and campaign is built
+        around trackable actions and ROI. We don’t just create ads. We engineer outcomes.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-box">
+          <i class="fas fa-bullseye"></i>
+          <h5>Data-driven Audience Targeting</h5>
+          <p>Precision targeting using real performance data to reach buyers who convert.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <i class="fas fa-chart-line"></i>
+          <h5>Strategic Paid Media Campaigns</h5>
+          <p>High-performing campaigns across platforms focused on revenue, not impressions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <i class="fas fa-sync"></i>
+          <h5>Continuous Optimization</h5>
+          <p>Real-time testing and optimization. No set-and-forget marketing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY IT WORKS -->
+<section id="why-it-works">
+  <div class="container">
+    <div class="section-title">
+      <h2>📊 Why Performance Marketing Works</h2>
+      <p>
+        Traditional advertising focuses on reach. Performance marketing ties spend directly
+        to clicks, leads, conversions, and sales.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h5>✔ Payment tied to real results</h5>
+        <p>Only pay for clicks, leads, conversions, or sales.</p>
+
+        <h5>✔ Real-time optimization</h5>
+        <p>Every dollar is adjusted based on live performance data.</p>
+
+        <h5>✔ Clear ROI & reporting</h5>
+        <p>Total transparency into what’s working and what’s scaling revenue.</p>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-box">
+          <h5>Traditional vs Performance Marketing</h5>
+          <hr>
+          <p><strong>Traditional:</strong> Pay for reach, vague results, slow feedback</p>
+          <p><strong>Performance:</strong> Pay for outcomes, measurable ROI, fast scaling</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section style="background:#f8f9ff" id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>📌 Our Core Services</h2>
+      <p>Built to scale smarter and invest where returns are highest.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="service">
+          <i class="fas fa-bullseye"></i>
+          <h5>Paid Media Strategy</h5>
+          <p>Conversion-focused campaign planning and execution.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service">
+          <i class="fas fa-robot"></i>
+          <h5>Campaign Optimization</h5>
+          <p>Ongoing testing, scaling, and improvement.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service">
+          <i class="fas fa-chart-bar"></i>
+          <h5>Tracking & Analytics</h5>
+          <p>Clean attribution, reporting, and insights.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="service">
+          <i class="fas fa-lightbulb"></i>
+          <h5>Strategy & Insight</h5>
+          <p>Data-led decisions to maximize ROI.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact">
+  <div class="container">
+    <div class="cta">
+      <h2>🚀 Let’s Drive Measurable Growth Together</h2>
+      <p class="mt-3 mb-4">
+        Stop guessing. Start optimizing. Turn goals into metrics and metrics into revenue.
+      </p>
+      <a href="#" class="btn btn-main btn-lg">Get Started Today</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Perf<span style="color:var(--accent)">Market</span></h4>
+        <p>Performance-driven marketing strategies that deliver real growth.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Services</h5>
+        <a href="#">Paid Media</a>
+        <a href="#">Optimization</a>
+        <a href="#">Analytics</a>
+        <a href="#">Strategy</a>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <a href="#">info@perfmarket.com</a>
+        <a href="#">+1 555 123 4567</a>
+      </div>
+    </div>
+    <div class="text-center mt-5 opacity-75">
+      © 2025 PerfMarket. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
